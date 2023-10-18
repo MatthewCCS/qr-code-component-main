@@ -9,7 +9,7 @@ main {
 }
 
 #card {
-  width: 375px;
+  max-width: 375px;
   margin-inline:auto;
   background-color: hsl(0, 0%, 100%);
   display: flex;
@@ -43,4 +43,16 @@ main {
 
 #card-text p{  
   font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+  #card {
+    max-width: 80%;
+  }
+  #card-img-container img{
+ 
+    margin:5%
+  
+  }
+
 }
